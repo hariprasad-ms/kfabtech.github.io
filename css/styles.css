@@ -849,47 +849,132 @@ input[type='checkbox'] {
 /***************************/
 /*     06. Description     */
 /***************************/
-.cards-1 {
-	padding-top: 3rem;
-	padding-bottom: 2.875rem;
-}
-
-.cards-1 .card {
-	margin-bottom: 2.5rem;
-	border: none;
+/* .cards-1 {
+    padding-top: 3rem;
+    padding-bottom: 2.875rem;
 	text-align: center;
 }
 
+.cards-1 .card {
+    margin-bottom: 2.5rem;
+    border: none;
+    text-align: center;
+}
+
 .cards-1 .fa-stack {
-	width: 6rem;
-	height: 6rem;
-	margin-right: auto;
-	margin-bottom: 1rem;
-	margin-left: auto;
-	line-height: 6rem;
-	text-align: left;
+    width: 6rem;
+    height: 6rem;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    line-height: 6rem;
+    text-align: left;
 }
 
 .cards-1 .fa-stack .hexagon {
-	position: absolute;
-	width: 6rem;
-	height: 6rem;
-	background: url('../images/hexagon-green.svg') center center no-repeat;
-	background-size: 6rem 6rem;
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    background: url('../images/hexagon-green.svg') center center no-repeat;
+    background-size: 6rem 6rem;
+	
 }
 
 .cards-1 .fa-stack-1x {
-	color: #fff;
-	font-size: 2rem;
+    color: #fff;
+    font-size: 2rem;
 }
 
 .cards-1 .card-body {
-	padding: 0;
+    padding: 0;
 }
 
 .cards-1 .card-title {
-	margin-bottom: 0.625rem;
+    margin-bottom: 0.625rem;
 }
+ */
+
+ .cards-1 {
+    padding-top: 3rem;
+    padding-bottom: 2.875rem;
+    text-align: center;
+    width: 100%;
+}
+
+.cards-1 .card {
+    margin-bottom: 2.5rem;
+    border: none;
+    text-align: center;
+    padding: 2rem; /* Increase padding for more content space */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    width: 100%;
+}
+
+.cards-1 .fa-stack {
+    width: 6rem;
+    height: 6rem;
+    margin: 0 auto 1rem auto; /* Center the logo */
+    position: relative;
+    line-height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards-1 .fa-stack .hexagon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6rem;
+    height: 6rem;
+    background: url('../images/hexagon-green.svg') center center no-repeat;
+    background-size: 6rem 6rem;
+}
+
+.cards-1 .fa-stack-1x {
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cards-1 .card-body {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the text elements */
+    margin: 0 auto; /* Center the card body within its container */
+}
+
+.cards-1 .card-title {
+    margin-bottom: 0.625rem;
+    font-size: 1.5rem; /* Increase the font size of the title */
+}
+
+.cards-1 .card-text {
+    font-size: 1.125rem; /* Increase the font size of the text */
+    text-align:initial; /* Justify align text */
+    width: 100%; /* Ensure the paragraph takes full width */
+    margin: 0 auto; /* Center the paragraph within its container */
+    padding: 0 2rem; /* Add padding to the left and right for spacing */
+    max-width: 1000px; /* Optional: Limit the maximum width */
+}
+
+.card-paragraph {
+	font-size: 1.125rem; /* Increase the font size of the text */
+    text-align: left; /* Justify align text */
+    width: 100%; /* Ensure the paragraph takes full width */
+    margin: 0 auto; /* Center the paragraph within its container */
+    padding: 0 2rem; /* Add padding to the left and right for spacing */
+    max-width: 1000px; /* Optional: Limit the maximum width */
+}
+
 
 
 /************************/
@@ -961,7 +1046,7 @@ input[type='checkbox'] {
 }
 
 .cards-2 .button-container {
-	margin-top: -1.375rem;
+	margin-top: 1.375rem;   /*-1.375rem*/
 	text-align: center;
 }
 
@@ -1037,6 +1122,7 @@ input[type='checkbox'] {
 	vertical-align: middle;
 	cursor: pointer;
 	transition: all 0.2s ease;
+	
 }
 
 .accordion .item:hover .accordion-title {
@@ -1050,6 +1136,7 @@ input[type='checkbox'] {
 .accordion .accordion-body {
 	margin-left: 3.125rem;
 }
+
 
 
 /*************************/
@@ -1219,12 +1306,15 @@ input[type='checkbox'] {
 }
 
 .slider .card-image {
+	display: flex;
 	width: 6rem;
 	height: 6rem;
 	margin-right: auto;
 	margin-bottom: 0.25rem;
 	margin-left: auto;
 	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
 }
 
 .slider .card .card-body {
