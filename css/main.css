@@ -72,21 +72,24 @@
          position: relative;
          margin-right: 30px;
          border: 1px solid #3ecf8e;
-         margin-top: 12px; }
+         margin-top: 12px;
+         margin-bottom: 12px; }
+         
          #features .feature-item .feature-icon i {
            font-size: 40px;
            color: #3ecf8e;
            position: absolute;
            left: 0;
            right: 0;
-           top: 32%; }
+           top: 30%; }
        #features .feature-item h4 {
          font-size: 20px;
          font-weight: 600;
          margin-bottom: 20px; }
        #features .feature-item p {
          font-size: 16px;
-         display: block; }
+         display: contents; 
+         align-items: center;}
        #features .feature-item:hover {
          box-shadow: 0px 0px 25px 0px rgba(95, 95, 95, 0.24);
          -moz-transition: all .8s ease;
