@@ -30,6 +30,11 @@
 .lni-empty-file:before {
   content: "\e916";
 }
+
+.lni-thermometer:before {
+  content: "\f055";
+}
+
 .lni-remove-file:before {
   content: "\e917";
 }
