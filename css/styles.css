@@ -1,6 +1,6 @@
-/* Template: kfab - Business HTML Landing Page Template
-   Author: Inovatik
-   Created: Jul 2019
+/* Web Design: K-fab - Business HTML Landing Page Template
+   Author: Hariprasad
+   Created: Mar 2024
    Description: Master CSS file
 */
 
@@ -845,55 +845,6 @@ input[type='checkbox'] {
 } 
 /* end of hover animation */
 
-
-/***************************/
-/*     06. Description     */
-/***************************/
-/* .cards-1 {
-    padding-top: 3rem;
-    padding-bottom: 2.875rem;
-	text-align: center;
-}
-
-.cards-1 .card {
-    margin-bottom: 2.5rem;
-    border: none;
-    text-align: center;
-}
-
-.cards-1 .fa-stack {
-    width: 6rem;
-    height: 6rem;
-    margin-right: auto;
-    margin-bottom: 1rem;
-    margin-left: auto;
-    line-height: 6rem;
-    text-align: left;
-}
-
-.cards-1 .fa-stack .hexagon {
-    position: absolute;
-    width: 6rem;
-    height: 6rem;
-    background: url('../images/hexagon-green.svg') center center no-repeat;
-    background-size: 6rem 6rem;
-	
-}
-
-.cards-1 .fa-stack-1x {
-    color: #fff;
-    font-size: 2rem;
-}
-
-.cards-1 .card-body {
-    padding: 0;
-}
-
-.cards-1 .card-title {
-    margin-bottom: 0.625rem;
-}
- */
-
  .cards-1 {
     padding-top: 3rem;
     padding-bottom: 2.875rem;
@@ -911,6 +862,17 @@ input[type='checkbox'] {
     align-items: center; /* Center items horizontally */
     justify-content: center; /* Center items vertically */
     width: 100%;
+}
+
+.fa-stack{
+	display: inline-block;
+}
+
+.fa-center-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Adjust based on your container's height */
 }
 
 .cards-1 .fa-stack {
